@@ -1,53 +1,24 @@
-<p align="center">
-  <picture>
-    <img alt="Textbase python library" src="assets/logo.svg" width="352" height="59" style="max-width: 100%;">
-  </picture>
-  <br/>
-  <br/>
-</p>
+# 🤖 Mercor Hackathon Chatbot 🚀
 
-<p align="center">
-    <a href="https://docs.textbase.ai">
-        <img alt="Documentation" src="https://img.shields.io/website/http/huggingface.co/docs/transformers/index.svg?down_color=red&down_message=offline&up_message=online">
-    </a>
-</p>
+Mercor Hackathon Chatbot is a text-based chatbot project with textbase frontend and open API endpoints that offers three main services: Talking Bot 🗣️, Book Recommendation 📚, and Personal Health Assistant 💪. This chatbot engages users in interactive conversations by asking them questions to better understand their choices, thereby expanding or continuing the conversation based on their responses.
 
-<h3 align="center">
-    <p>✨ Textbase is a framework for building chatbots using NLP and ML. ✨</p>
-</h3>
+✨ **Textbase** is a framework for building chatbots using NLP and ML. ✨
 
-<h3 align="center">
-    <a href="https://textbase.ai"><img src="assets/banner.png"></a>
-</h3>
+## Features
 
-Just implement the `on_message` function in `main.py` and Textbase will take care of the rest :)
+- **Talking Bot 🗣️**: Engage in a friendly conversation with the bot. The bot asks intriguing questions and provides witty responses, making every chat a delightful experience.
 
-Since it is just Python you can use whatever models, libraries, vector databases and APIs you want.
+- **Book Recommendation 📚**: The bot is your bookworm friend, always ready to recommend your next literary adventure. From classic novels to thrilling mysteries, this bot knows it all.
 
-Coming soon:
-- [x] [PyPI package](https://pypi.org/project/textbase-client/)
-- [x] Easy web deployment via [textbase deploy](/docs/deployment/deploy-from-cli)
-- [ ] SMS integration
-- [ ] Native integration of other models (Claude, Llama, ...)
-
-![Demo Deploy GIF](assets/textbase-deploy.gif)
+- **Personal Health Assistant 💪**: Your very own health guru! The bot will inquire about your lifestyle choices, offer personalized health tips, and cheer you on your journey to a healthier lifestyle.
 
 ## Installation
-Make sure you have `python version >=3.9.0`, it's always good to follow the [docs](https://docs.textbase.ai/get-started/installation) 👈🏻
-### 1. Through pip
-```bash
-pip install textbase-client
-```
 
-### 2. Local installation
 Clone the repository and install the dependencies using [Poetry](https://python-poetry.org/) (you might have to [install Poetry](https://python-poetry.org/docs/#installation) first).
 
-For proper details see [here]()
-
 ```bash
-git clone https://github.com/cofactoryai/textbase
-cd textbase
-poetry shell
+git clone https://github.com/charanmcr/mercor_hackathon_chatbot.git
+cd mercor_hackathon_chatbot
 poetry install
 ```
 
@@ -56,24 +27,22 @@ poetry install
 > If you're using the default template, **remember to set the OpenAI API key** in `main.py`.
 
 Run the following command:
-- if installed locally
-    ```bash
-    poetry run python textbase/textbase_cli.py test
-    ```
-- if installed through pip
-    ```bash
-    textbase-client test
-    ```
-Response:
+
 ```bash
-Path to the main.py file: examples/openai-bot/main.py # You can create a main.py by yourself and add that path here. NOTE: The path should not be in quotes
+poetry run python textbase/textbase_cli.py test main.py
 ```
-Now go to the link in blue color which is shown on the CLI and you will be able to chat with your bot!
-![Local UI](assets/test_command.png)
 
-### `Other commands have been mentioned in the documentaion website.` [Have a look](https://docs.textbase.ai/usage) 😃!
+> Send a Hello message in the chat and the bot would instantly spin up!!
+
+Head over to http://localhost:5173 and experience the wonder of all three services in one chatty bundle! Happy exploring! 🤖💬📚💪🎉
+
+## Environment Variables
+
+To run this project, you will need to add 
+
+`OPEN AI API_KEY`
 
 
-## Contributions
+## Authors
 
-Contributions are welcome! Please open an issue or create a pull request.
+- [@pranjalkv](https://www.github.com/pranjalkv)
